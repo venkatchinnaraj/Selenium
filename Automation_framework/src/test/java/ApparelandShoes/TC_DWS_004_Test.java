@@ -21,7 +21,7 @@ public class TC_DWS_004_Test extends Baseclass {
 	Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Apparel & Shoes","Apparel and Shoes page is not displayed");
 	
 	test.log(Status.PASS,"Apparel and Shoes page is displayed");
-		test.log(Status.PASS,"Apparel and Shoes page is displayed");
+		
 		
 	
 	}
