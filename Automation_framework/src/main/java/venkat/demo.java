@@ -8,6 +8,7 @@ public class demo {
 	@Test
 	public void launch() {
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		
 	}
 
