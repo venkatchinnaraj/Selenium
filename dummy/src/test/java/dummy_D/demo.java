@@ -13,7 +13,8 @@ public class demo {
 		driver.get("https://github.com/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.close();
+		driver.getCurrentUrl();
+	        driver.close();
 		
 		
 	}
