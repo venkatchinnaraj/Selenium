@@ -10,6 +10,7 @@ public class demo {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://github.com/login");
 		driver.close();
+		driver.quite();
 		
 	}
 
