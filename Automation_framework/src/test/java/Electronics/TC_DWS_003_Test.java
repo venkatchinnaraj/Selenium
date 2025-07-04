@@ -25,7 +25,7 @@ public class TC_DWS_003_Test extends Baseclass {
 	
 	webdriverutility wu=new webdriverutility();
 	wu.mouseHover(driver,hp.getElectronicslink());
-	driver.findElement(By.partialLinkText("Cell phones ")).click();
+	driver.findElement(By.partialLinkText("Cell phones")).click();
 	
 
 	

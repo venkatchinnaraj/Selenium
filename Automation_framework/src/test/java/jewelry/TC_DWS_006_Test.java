@@ -19,7 +19,7 @@ public class TC_DWS_006_Test extends Baseclass {
 		
 	Homepage hp=new Homepage(driver);
 	hp.getJewelrylink().click();
-	Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Digital downloads","jewelery page is not displayed");
+	Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Jewelry","jewelery page is not displayed");
 	
 	test.log(Status.PASS,"jewelery page is displayed");
 	

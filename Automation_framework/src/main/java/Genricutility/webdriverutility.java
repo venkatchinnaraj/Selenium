@@ -132,16 +132,20 @@ public class webdriverutility {
 		}
 		return options;
 	}
-
-	public void switchToFrame(WebDriver driver, int index) {
+/**
+ * this methos is used to switchto frame
+ * @param driver
+ * @param index
+ */
+	public void switchToFrameindex(WebDriver driver, int index) {
 		driver.switchTo().frame(index);
 	}
 
-	public void switchToFrame(WebDriver driver, String nameorid) {
+	public void switchToFramename(WebDriver driver, String nameorid) {
 		driver.switchTo().frame(nameorid);
 	}
 
-	public void switchToFrame(WebDriver driver, WebElement element) {
+	public void switchToFrameelement(WebDriver driver, WebElement element) {
 		driver.switchTo().frame(element);
 	}
 
@@ -169,11 +173,15 @@ public class webdriverutility {
 			driver.switchTo().window(id);
 			String acturl = driver.getCurrentUrl();
 			if (acturl.contains(expurl))
-				;
+				
 			break;
 		}
 	}
-	
+	/**
+	 *  This method is used to takesscreenshot
+	 * @param driver
+	 * @throws IOException
+	 */
 	public void getPhotos(WebDriver driver) throws IOException {
 		javautility jutil=new javautility();
 		TakesScreenshot ts=(TakesScreenshot) driver;
@@ -186,4 +194,5 @@ public class webdriverutility {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo("+x+","+y+")");
 	}
+	
 }
